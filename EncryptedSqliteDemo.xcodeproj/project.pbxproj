@@ -21,6 +21,18 @@
 		AF4C554519419C0F006EAE1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4C552719419C0E006EAE1B /* UIKit.framework */; };
 		AF4C554D19419C0F006EAE1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF4C554B19419C0F006EAE1B /* InfoPlist.strings */; };
 		AF4C554F19419C0F006EAE1B /* EncryptedSqliteDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4C554E19419C0F006EAE1B /* EncryptedSqliteDemoTests.m */; };
+		AF876638194AA545006EBF37 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF87662C194AA514006EBF37 /* libcrypto.a */; };
+		AF876639194AA545006EBF37 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF876633194AA52A006EBF37 /* libsqlcipher.a */; };
+		AF87665A194AA80D006EBF37 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AF876651194AA80D006EBF37 /* FMDatabase.m */; };
+		AF87665B194AA80D006EBF37 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AF876651194AA80D006EBF37 /* FMDatabase.m */; };
+		AF87665C194AA80D006EBF37 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF876653194AA80D006EBF37 /* FMDatabaseAdditions.m */; };
+		AF87665D194AA80D006EBF37 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF876653194AA80D006EBF37 /* FMDatabaseAdditions.m */; };
+		AF87665E194AA80D006EBF37 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = AF876655194AA80D006EBF37 /* FMDatabasePool.m */; };
+		AF87665F194AA80D006EBF37 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = AF876655194AA80D006EBF37 /* FMDatabasePool.m */; };
+		AF876660194AA80D006EBF37 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AF876657194AA80D006EBF37 /* FMDatabaseQueue.m */; };
+		AF876661194AA80D006EBF37 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AF876657194AA80D006EBF37 /* FMDatabaseQueue.m */; };
+		AF876662194AA80D006EBF37 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AF876659194AA80D006EBF37 /* FMResultSet.m */; };
+		AF876663194AA80D006EBF37 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AF876659194AA80D006EBF37 /* FMResultSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +42,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = AF4C551F19419C0E006EAE1B;
 			remoteInfo = EncryptedSqliteDemo;
+		};
+		AF87662B194AA514006EBF37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF876627194AA514006EBF37 /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9069D28C0FCE659A0042E34C;
+			remoteInfo = crypto;
+		};
+		AF876632194AA52A006EBF37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF87662D194AA52A006EBF37 /* sqlcipher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
+		AF876634194AA53C006EBF37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF87662D194AA52A006EBF37 /* sqlcipher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
+		AF876636194AA540006EBF37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF876627194AA514006EBF37 /* openssl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9069D28B0FCE659A0042E34C;
+			remoteInfo = crypto;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +93,18 @@
 		AF4C554A19419C0F006EAE1B /* EncryptedSqliteDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EncryptedSqliteDemoTests-Info.plist"; sourceTree = "<group>"; };
 		AF4C554C19419C0F006EAE1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AF4C554E19419C0F006EAE1B /* EncryptedSqliteDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncryptedSqliteDemoTests.m; sourceTree = "<group>"; };
+		AF876627194AA514006EBF37 /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = "openssl-xcode/openssl.xcodeproj"; sourceTree = "<group>"; };
+		AF87662D194AA52A006EBF37 /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
+		AF876650194AA80D006EBF37 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		AF876651194AA80D006EBF37 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		AF876652194AA80D006EBF37 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		AF876653194AA80D006EBF37 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		AF876654194AA80D006EBF37 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		AF876655194AA80D006EBF37 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		AF876656194AA80D006EBF37 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		AF876657194AA80D006EBF37 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		AF876658194AA80D006EBF37 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		AF876659194AA80D006EBF37 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF876638194AA545006EBF37 /* libcrypto.a in Frameworks */,
+				AF876639194AA545006EBF37 /* libsqlcipher.a in Frameworks */,
 				AF4C552619419C0E006EAE1B /* CoreGraphics.framework in Frameworks */,
 				AF4C552819419C0E006EAE1B /* UIKit.framework in Frameworks */,
 				AF4C552419419C0E006EAE1B /* Foundation.framework in Frameworks */,
@@ -82,6 +136,9 @@
 		AF4C551719419C0E006EAE1B = {
 			isa = PBXGroup;
 			children = (
+				AF87664F194AA80D006EBF37 /* fmdb */,
+				AF87662D194AA52A006EBF37 /* sqlcipher.xcodeproj */,
+				AF876627194AA514006EBF37 /* openssl.xcodeproj */,
 				AF4C552919419C0E006EAE1B /* EncryptedSqliteDemo */,
 				AF4C554819419C0F006EAE1B /* EncryptedSqliteDemoTests */,
 				AF4C552219419C0E006EAE1B /* Frameworks */,
@@ -152,6 +209,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AF876628194AA514006EBF37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF87662C194AA514006EBF37 /* libcrypto.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF87662E194AA52A006EBF37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF876633194AA52A006EBF37 /* libsqlcipher.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF87664F194AA80D006EBF37 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				AF876650194AA80D006EBF37 /* FMDatabase.h */,
+				AF876651194AA80D006EBF37 /* FMDatabase.m */,
+				AF876652194AA80D006EBF37 /* FMDatabaseAdditions.h */,
+				AF876653194AA80D006EBF37 /* FMDatabaseAdditions.m */,
+				AF876654194AA80D006EBF37 /* FMDatabasePool.h */,
+				AF876655194AA80D006EBF37 /* FMDatabasePool.m */,
+				AF876656194AA80D006EBF37 /* FMDatabaseQueue.h */,
+				AF876657194AA80D006EBF37 /* FMDatabaseQueue.m */,
+				AF876658194AA80D006EBF37 /* FMResultSet.h */,
+				AF876659194AA80D006EBF37 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +256,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				AF876637194AA540006EBF37 /* PBXTargetDependency */,
+				AF876635194AA53C006EBF37 /* PBXTargetDependency */,
 			);
 			name = EncryptedSqliteDemo;
 			productName = EncryptedSqliteDemo;
@@ -216,6 +308,16 @@
 			mainGroup = AF4C551719419C0E006EAE1B;
 			productRefGroup = AF4C552119419C0E006EAE1B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AF876628194AA514006EBF37 /* Products */;
+					ProjectRef = AF876627194AA514006EBF37 /* openssl.xcodeproj */;
+				},
+				{
+					ProductGroup = AF87662E194AA52A006EBF37 /* Products */;
+					ProjectRef = AF87662D194AA52A006EBF37 /* sqlcipher.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AF4C551F19419C0E006EAE1B /* EncryptedSqliteDemo */,
@@ -223,6 +325,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AF87662C194AA514006EBF37 /* libcrypto.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcrypto.a;
+			remoteRef = AF87662B194AA514006EBF37 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF876633194AA52A006EBF37 /* libsqlcipher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsqlcipher.a;
+			remoteRef = AF876632194AA52A006EBF37 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AF4C551E19419C0E006EAE1B /* Resources */ = {
@@ -251,8 +370,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF4C553419419C0E006EAE1B /* RJAppDelegate.m in Sources */,
+				AF87665E194AA80D006EBF37 /* FMDatabasePool.m in Sources */,
 				AF4C553019419C0E006EAE1B /* main.m in Sources */,
+				AF876660194AA80D006EBF37 /* FMDatabaseQueue.m in Sources */,
 				AF4C553A19419C0E006EAE1B /* RJViewController.m in Sources */,
+				AF87665A194AA80D006EBF37 /* FMDatabase.m in Sources */,
+				AF876662194AA80D006EBF37 /* FMResultSet.m in Sources */,
+				AF87665C194AA80D006EBF37 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +384,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF876663194AA80D006EBF37 /* FMResultSet.m in Sources */,
+				AF876661194AA80D006EBF37 /* FMDatabaseQueue.m in Sources */,
 				AF4C554F19419C0F006EAE1B /* EncryptedSqliteDemoTests.m in Sources */,
+				AF87665F194AA80D006EBF37 /* FMDatabasePool.m in Sources */,
+				AF87665B194AA80D006EBF37 /* FMDatabase.m in Sources */,
+				AF87665D194AA80D006EBF37 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +400,16 @@
 			isa = PBXTargetDependency;
 			target = AF4C551F19419C0E006EAE1B /* EncryptedSqliteDemo */;
 			targetProxy = AF4C554619419C0F006EAE1B /* PBXContainerItemProxy */;
+		};
+		AF876635194AA53C006EBF37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlcipher;
+			targetProxy = AF876634194AA53C006EBF37 /* PBXContainerItemProxy */;
+		};
+		AF876637194AA540006EBF37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = crypto;
+			targetProxy = AF876636194AA540006EBF37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -380,6 +519,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EncryptedSqliteDemo/EncryptedSqliteDemo-Prefix.pch";
 				INFOPLIST_FILE = "EncryptedSqliteDemo/EncryptedSqliteDemo-Info.plist";
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +533,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EncryptedSqliteDemo/EncryptedSqliteDemo-Prefix.pch";
 				INFOPLIST_FILE = "EncryptedSqliteDemo/EncryptedSqliteDemo-Info.plist";
+				OTHER_CFLAGS = (
+					"-DSQLITE_HAS_CODEC",
+					"-DNS_BLOCK_ASSERTIONS=1",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +601,7 @@
 				AF4C555419419C0F006EAE1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF4C555519419C0F006EAE1B /* Build configuration list for PBXNativeTarget "EncryptedSqliteDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +610,7 @@
 				AF4C555719419C0F006EAE1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

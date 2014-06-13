@@ -7,12 +7,21 @@
 //
 
 #import "RJAppDelegate.h"
+#import "FMDatabase.h"
 
 @implementation RJAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSString *unEncryDatabasePath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+                                     stringByAppendingPathComponent: @"unencrypted.sqlite"];
+    NSLog(@"umEncryDatabase path is %@",unEncryDatabasePath);
+    FMDatabase *database = [FMDatabase databaseWithPath:unEncryDatabasePath];
+    [database open];
+    BOOL update = [database executeUpdate:[NSString stringWithFormat:@"create table MyTable (_id INTEGER PRIMARY KEY,FSCode varchar,FByIndex integer,FByName varchar,FFieldName varchar,FIsShowList integer,FDefault1 varchar,FDefault2 integer)"]];
+    NSLog(@"%@",[database lastErrorMessage]);
+    [database close];
     return YES;
 }
 							
